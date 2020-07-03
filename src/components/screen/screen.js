@@ -3,11 +3,11 @@ import battery from '../../assets/battery.svg'
 import arrowright from '../../assets/arrow_right.svg'
 import Doorie from '../../assets/coverflow/doorie.png'
 import icon from '../../assets/games/games-icon.png'
-import rIcon from '../../assets/logo192.png'
+import rIcon from '../../assets/setting.png'
 import playic from '../../assets/play.svg'
 import pause from '../../assets/pause.svg'
-import dice from '../../assets/dice.svg'
-import logo from '../../assets/ipod_logo.svg'
+import roadRash from '../../assets/RoadRashSCD.png'
+import iPod from '../../assets/ipod.png'
 
 function screen(props) {
 
@@ -126,7 +126,7 @@ and when that becomes none , this will work */}
                             <div className="songName">
                                 {track.name}
                             </div>
-                            <div>{track.album}</div>
+                            <div >{track.album}</div>
                             <div className="artist"> <span>Artists:</span>  {track.artist} </div>
                         </div>
                     </div>
@@ -145,23 +145,17 @@ and when that becomes none , this will work */}
                 {/* -------------------------------------------------------------------------- */}
                 {/* games */}
                 <div className={`${games ? "gm" : "rm"}`}>
-                    <img src={dice} alt=""></img>
+                    <img src={roadRash} alt=""></img>
                 </div>
 
                 {/* -------------------------------------------------------------------------- */}
                 {/* settings */}
                 <div className={`${settings ? "setting" : "rm"}`}>
                     <div className="st_cont">
-                    <div>
-                        <img src={logo} alt=""></img>
+                        <img src={iPod} alt=""></img>
                     </div>
-                    <div className="ipod">
-                        iPod.js
-                    </div>
-                    </div>
-                   
                     <div className="text">
-                        MADE BY GYAN
+                        BY GYAN
                     </div>
                 </div>
             </div>
